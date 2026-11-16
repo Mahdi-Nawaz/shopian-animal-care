@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopian Animal Care | Kashmir Veterinary Aid &amp; Rescue Web Concept</title>
+
+    <!-- Google Fonts: Fraunces (Editorial Serif) & Plus Jakarta Sans (Clean Geometric Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pine: {
+                            DEFAULT: '#0B2B26',
+                            spruce: '#133E37',
+                            deep: '#071E1A',
+                            sage: '#2E6F5E',
+                            mist: '#E6F0EC'
+                        },
+                        pashmina: {
+                            DEFAULT: '#FAF6F0',
+                            sand: '#F3ECE1',
+                            border: '#E6DFD3',
+                            ink: '#1C2522',
+                            muted: '#57635F'
+                        },
+                        saffron: {
+                            DEFAULT: '#C87D32',
+                            hover: '#A86422',
+                            light: '#FDF3E7',
+                            glow: '#E59F52'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Fraunces', 'Georgia', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif']
+                    },
+                    boxShadow: {
+                        editorial: '0 20px 50px -15px rgba(11, 43, 38, 0.10)',
+                        card: '0 8px 30px -6px rgba(11, 43, 38, 0.06)',
+                        saffronGlow: '0 10px 28px -6px rgba(200, 125, 50, 0.45)'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Editorial Range Slider in Kashmiri Saffron Gold */
+        input[type="range"].saffron-slider {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 8px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, #C87D32 0%, #E6DFD3 0%);
+            outline: none;
+            cursor: pointer;
+        }
+        input[type="range"].saffron-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: #C87D32;
+            border: 4px solid #FFFFFF;
+            box-shadow: 0 4px 14px rgba(11, 43, 38, 0.28);
+            cursor: pointer;
+            transition: transform 0.18s ease, background-color 0.18s ease;
+        }
+        input[type="range"].saffron-slider::-webkit-slider-thumb:hover {
+            transform: scale(1.12);
+            background: #A86422;
+        }
+        input[type="range"].saffron-slider::-moz-range-thumb {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: #C87D32;
+            border: 4px solid #FFFFFF;
+            box-shadow: 0 4px 14px rgba(11, 43, 38, 0.28);
+            cursor: pointer;
+            transition: transform 0.18s ease, background-color 0.18s ease;
+        }
+
+        /* Smooth Scroll-Reveal Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(22px);
+            transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Subtle Botanical Texture Pattern */
+        .bg-kashmir-grid {
+            background-image: radial-gradient(rgba(200, 125, 50, 0.12) 1px, transparent 1px);
+            background-size: 26px 26px;
+        }
+    </style>
+</head>
+<body class="bg-pashmina text-pashmina-ink font-sans antialiased selection:bg-saffron selection:text-white overflow-x-hidden">
+
+    <!-- ==================== 1. STICKY GLASSMORPHIC HEADER ==================== -->
+    <header class="sticky top-0 z-40 bg-pashmina/90 backdrop-blur-md border-b border-pashmina-border transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Custom Geometric Paw + Chinar Leaf Emblem -->
+                <a href="#home" class="flex items-center gap-3.5 group focus:outline-none">
+                    <div class="w-11 h-11 rounded-2xl bg-pine text-saffron-glow flex items-center justify-center shadow-md group-hover:bg-pine-spruce transition relative overflow-hidden">
+                        <svg class="w-7 h-7" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <!-- Chinar Leaf Silhouette Accent -->
+                            <path d="M18 3L20.5 9.5L27 7.5L23.5 13.5L30 16L22.5 19.5L24.5 25L18 22L11.5 25L13.5 19.5L6 16L12.5 13.5L9 7.5L15.5 9.5L18 3Z" stroke="#C87D32" stroke-width="1.5" stroke-linejoin="round" fill="rgba(200,125,50,0.18)"/>
+                            <!-- Inner Paw Pad -->
+                            <circle cx="18" cy="21" r="3.2" fill="#FAF6F0"/>
+                            <circle cx="13.5" cy="16.5" r="1.5" fill="#FAF6F0"/>
+                            <circle cx="16.5" cy="14.5" r="1.5" fill="#FAF6F0"/>
+                            <circle cx="19.5" cy="14.5" r="1.5" fill="#FAF6F0"/>
+                            <circle cx="22.5" cy="16.5" r="1.5" fill="#FAF6F0"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="font-serif font-bold text-xl sm:text-[22px] text-pine tracking-tight block leading-none">
+                            Shopian Animal Care
+                        </span>
+                        <span class="text-[11px] font-semibold uppercase tracking-[0.14em] text-saffron block mt-1">
+                            Kashmir Veterinary Aid Concept
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav aria-label="Primary Navigation" class="hidden lg:flex items-center gap-8 text-sm font-semibold text-pashmina-ink/80">
+                    <a href="#about" class="hover:text-pine transition py-1">About</a>
+                    <a href="#programs" class="hover:text-pine transition py-1">Care Programs</a>
+                    <a href="#calculator" class="hover:text-pine transition py-1">Aid Calculator</a>
+                    <a href="#field-notes" class="hover:text-pine transition py-1">Field Notes</a>
+                    <a href="#shopian-desk" class="hover:text-pine transition py-1">Shopian Desk</a>
+                </nav>
+
+                <!-- Desktop CTA + Mobile Hamburger -->
+                <div class="flex items-center gap-3">
+                    <a href="#calculator" class="hidden sm:inline-flex items-center gap-2 bg-saffron hover:bg-saffron-hover text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-saffronGlow transition transform hover:-translate-y-0.5">
+                        <i data-lucide="heart-handshake" class="w-4 h-4"></i>
+                        <span>Pledge Aid</span>
+                    </a>
+
+                    <button id="mobile-menu-btn" type="button" aria-label="Toggle Menu" aria-expanded="false" class="lg:hidden p-2.5 rounded-xl border border-pashmina-border bg-white text-pine hover:bg-pashmina-sand transition">
+                        <i data-lucide="menu" class="w-5 h-5"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-pashmina-border px-4 pt-3 pb-6 space-y-2 shadow-lg">
+            <a href="#about" class="mobile-link block px-4 py-3 rounded-xl text-sm font-semibold text-pine hover:bg-pashmina">About</a>
+            <a href="#programs" class="mobile-link block px-4 py-3 rounded-xl text-sm font-semibold text-pine hover:bg-pashmina">Care Programs</a>
+            <a href="#calculator" class="mobile-link block px-4 py-3 rounded-xl text-sm font-semibold text-pine hover:bg-pashmina">Aid Calculator</a>
+            <a href="#field-notes" class="mobile-link block px-4 py-3 rounded-xl text-sm font-semibold text-pine hover:bg-pashmina">Field Notes</a>
+            <a href="#shopian-desk" class="mobile-link block px-4 py-3 rounded-xl text-sm font-semibold text-pine hover:bg-pashmina">Shopian Desk</a>
+            <div class="pt-2">
+                <a href="#calculator" class="mobile-link flex items-center justify-center gap-2 w-full bg-saffron text-white font-semibold py-3 rounded-full shadow-md">
+                    <i data-lucide="heart-handshake" class="w-4 h-4"></i> Pledge Aid
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== 2. EDITORIAL SPLIT HERO SECTION ==================== -->
+    <section id="home" class="relative bg-gradient-to-br from-pine via-pine-spruce to-pine-deep text-white pt-12 pb-28 sm:pt-16 sm:pb-36 overflow-hidden">
+        <!-- Subtle Radial Saffron Glow -->
+        <div class="pointer-events-none absolute -top-24 right-0 w-[520px] h-[520px] rounded-full bg-saffron/15 blur-3xl"></div>
+        <div class="pointer-events-none absolute bottom-10 -left-24 w-[420px] h-[420px] rounded-full bg-pine-sage/20 blur-3xl"></div>
+
+        <!-- Custom Inline SVG Chinar Leaf & Pir Panjal Mountain Ridge Line Art -->
+        <svg class="pointer-events-none absolute bottom-0 left-0 w-full h-36 sm:h-48 text-white/[0.05]" viewBox="0 0 1440 220" fill="none" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 185L160 115L290 155L470 72L650 145L830 55L1020 138L1210 82L1440 160V220H0V185Z" fill="currentColor"/>
+            <path d="M0 195L210 135L390 172L580 95L790 165L990 88L1190 152L1440 110" stroke="#C87D32" stroke-opacity="0.28" stroke-width="1.5"/>
+        </svg>
+
+        <!-- Decorative Floating Chinar Motif (Top Right) -->
+        <svg class="pointer-events-none hidden md:block absolute top-10 right-10 w-44 h-44 text-saffron/15" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+            <path d="M60 10L68 34L92 26L80 48L106 56L78 68L86 90L60 78L34 90L42 68L14 56L40 48L28 26L52 34L60 10Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M60 35V106" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+
+                <!-- Left Editorial Copy -->
+                <div class="lg:col-span-7 space-y-6">
+                    <!-- Top Pill Badge -->
+                    <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/10 border border-white/15 backdrop-blur-sm text-xs sm:text-sm font-medium text-pashmina-sand">
+                        <span class="w-2 h-2 rounded-full bg-saffron-glow animate-pulse"></span>
+                        <span>District Shopian, J&amp;K • 192303 • UI Concept Prototype</span>
+                    </div>
+
+                    <!-- Rich Editorial Serif Headline -->
+                    <h1 class="font-serif font-semibold text-4xl sm:text-5xl lg:text-[56px] leading-[1.12] tracking-tight text-pashmina">
+                        Compassionate Veterinary Care for the <span class="italic text-saffron-glow">Streets &amp; Orchards</span> of Shopian.
+                    </h1>
+
+                    <!-- Subtext -->
+                    <p class="text-base sm:text-lg text-emerald-100/85 max-w-2xl leading-relaxed">
+                        From sub-zero <em class="text-white not-italic font-medium">Chillai Kalan</em> frostbite relief and orchard road trauma triage to community dog and livestock feeding across <strong class="text-white font-semibold">Shopian Town, Arhama, Keller, Zainapora, Hirpora, and Sedow</strong>—explore a transparent care model tailored for South Kashmir.
+                    </p>
+
+                    <!-- Dual CTAs -->
+                    <div class="flex flex-wrap items-center gap-4 pt-2">
+                        <a href="#calculator" class="inline-flex items-center gap-2.5 bg-saffron hover:bg-saffron-hover text-white font-semibold px-7 py-3.5 rounded-full shadow-saffronGlow transition transform hover:-translate-y-0.5">
+                            <i data-lucide="calculator" class="w-4 h-4"></i>
+                            <span>Calculate Aid Impact</span>
+                        </a>
+                        <a href="#shopian-desk" class="inline-flex items-center gap-2.5 bg-white/10 hover:bg-white/15 text-white border border-white/25 font-semibold px-7 py-3.5 rounded-full backdrop-blur-sm transition">
+                            <i data-lucide="clipboard-plus" class="w-4 h-4 text-saffron-glow"></i>
+                            <span>Report / Volunteer Locally</span>
+                        </a>
+                    </div>
+
+                    <!-- Live Regional Status Pill -->
+                    <div class="pt-3">
+                        <div class="inline-flex items-center gap-3 px-4 py-2 rounded-2xl bg-pine-deep/80 border border-emerald-700/50 text-xs sm:text-sm text-emerald-100">
+                            <span class="relative flex h-2.5 w-2.5">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-400"></span>
+                            </span>
+                            <span><strong class="text-white">Active Focus:</strong> Shopian Town, Arhama &amp; Mughal Road</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Framed Editorial Hero Photo Card -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Subtle Offset Copper Frame -->
+                        <div class="hidden sm:block absolute -inset-3 rounded-[32px] border border-saffron/35 translate-x-2 translate-y-2 pointer-events-none"></div>
+
+                        <div class="relative rounded-[28px] overflow-hidden shadow-2xl border-2 border-white/20 bg-pine-spruce">
+                            <img
+                                src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=900&q=85"
+                                onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22920%22 viewBox=%220 0 800 920%22><rect width=%22800%22 height=%22920%22 fill=%22%23133E37%22/><text x=%2250%25%22 y=%2247%25%22 font-family=%22Georgia,serif%22 font-size=%2232%22 fill=%22%23FAF6F0%22 text-anchor=%22middle%22>Shopian Animal Care</text><text x=%2250%25%22 y=%2253%25%22 font-family=%22sans-serif%22 font-size=%2218%22 fill=%22%23E59F52%22 text-anchor=%22middle%22>District Shopian, Jammu &amp; Kashmir</text></svg>';"
+                                alt="Two healthy community dogs resting outdoors in cool mountain weather"
+                                class="w-full h-[400px] sm:h-[470px] object-cover"
+                            >
+                            <div class="absolute inset-0 bg-gradient-to-t from-pine-deep/90 via-pine-deep/20 to-transparent"></div>
+
+                            <!-- Floating Glass Badge inside Photo Card -->
+                            <div class="absolute bottom-4 left-4 right-4 sm:bottom-5 sm:left-5 sm:right-5 p-4 rounded-2xl bg-pine-deep/75 backdrop-blur-md border border-white/15 text-white">
+                                <div class="flex items-center justify-between gap-3">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-xl bg-saffron/25 border border-saffron/40 text-saffron-glow flex items-center justify-center shrink-0">
+                                            <i data-lucide="snowflake" class="w-5 h-5"></i>
+                                        </div>
+                                        <div>
+                                            <p class="font-serif font-semibold text-sm sm:text-base text-pashmina leading-snug">
+                                                Chillai Kalan Winter Care &amp; Trauma Relief
+                                            </p>
+                                            <p class="text-xs text-emerald-100/80 mt-0.5">
+                                                Thermal shelter, wound triage &amp; anti-rabies coverage
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 3. ELEVATED FLOATING IMPACT STRIP ==================== -->
+    <section aria-label="Key Concept Highlights" class="relative z-20 -mt-16 sm:-mt-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                <!-- Metric Card 1 -->
+                <div class="reveal bg-white rounded-3xl p-6 border border-pashmina-border shadow-editorial hover:-translate-y-1 transition duration-300">
+                    <div class="w-11 h-11 rounded-2xl bg-saffron-light text-saffron flex items-center justify-center mb-4">
+                        <i data-lucide="shield-alert" class="w-5 h-5"></i>
+                    </div>
+                    <h2 class="font-serif font-semibold text-xl text-pine">24/7 Winter &amp; Trauma Focus</h2>
+                    <p class="text-xs sm:text-sm text-pashmina-muted mt-1.5 leading-relaxed">
+                        Prioritizing road injury stabilization and hypothermia care during harsh Kashmir winters.
+                    </p>
+                </div>
+
+                <!-- Metric Card 2 -->
+                <div class="reveal bg-white rounded-3xl p-6 border border-pashmina-border shadow-editorial hover:-translate-y-1 transition duration-300">
+                    <div class="w-11 h-11 rounded-2xl bg-pine-mist text-pine-sage flex items-center justify-center mb-4">
+                        <i data-lucide="map-pinned" class="w-5 h-5"></i>
+                    </div>
+                    <h2 class="font-serif font-semibold text-xl text-pine">6 Shopian Blocks Covered</h2>
+                    <p class="text-xs sm:text-sm text-pashmina-muted mt-1.5 leading-relaxed">
+                        Shopian, Keller, Zainapora, Hirpora, Sedow &amp; Arhama localities mapped for field aid.
+                    </p>
+                </div>
+
+                <!-- Metric Card 3 -->
+                <div class="reveal bg-white rounded-3xl p-6 border border-pashmina-border shadow-editorial hover:-translate-y-1 transition duration-300">
+                    <div class="w-11 h-11 rounded-2xl bg-saffron-light text-saffron flex items-center justify-center mb-4">
+                        <i data-lucide="scale" class="w-5 h-5"></i>
+                    </div>
+                    <h2 class="font-serif font-semibold text-xl text-pine">100% Transparent Aid Estimator</h2>
+                    <p class="text-xs sm:text-sm text-pashmina-muted mt-1.5 leading-relaxed">
+                        Itemized unit breakdown for vaccines, trauma kits, winter coats, and daily meals.
+                    </p>
+                </div>
+
+                <!-- Metric Card 4 -->
+                <div class="reveal bg-white rounded-3xl p-6 border border-pashmina-border shadow-editorial hover:-translate-y-1 transition duration-300">
+                    <div class="w-11 h-11 rounded-2xl bg-pine-mist text-pine flex items-center justify-center mb-4">
+                        <i data-lucide="badge-check" class="w-5 h-5"></i>
+                    </div>
+                    <h2 class="font-serif font-semibold text-xl text-pine">Zero Fictional Claims • Open Concept</h2>
+                    <p class="text-xs sm:text-sm text-pashmina-muted mt-1.5 leading-relaxed">
+                        Honest educational UI prototype with real District Shopian civic references only.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 4. ABOUT US SECTION ==================== -->
+    <section id="about" class="py-20 sm:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+                <!-- Left Layered Photography & Editorial Callout -->
+                <div class="lg:col-span-6 reveal">
+                    <div class="relative">
+                        <div class="grid grid-cols-12 gap-4 items-end">
+                            <div class="col-span-7">
+                                <div class="rounded-3xl overflow-hidden border border-pashmina-border shadow-card bg-white">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=700&q=85"
+                                        onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22700%22 viewBox=%220 0 600 700%22><rect width=%22600%22 height=%22700%22 fill=%22%232E6F5E%22/><text x=%2250%25%22 y=%2250%25%22 font-family=%22Georgia,serif%22 font-size=%2224%22 fill=%22%23FAF6F0%22 text-anchor=%22middle%22>Shopian Community Care</text></svg>';"
+                                        alt="Healthy vaccinated community dog resting safely"
+                                        class="w-full h-72 sm:h-80 object-cover"
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-span-5 space-y-4">
+                                <div class="rounded-3xl overflow-hidden border border-pashmina-border shadow-card bg-white">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?auto=format&fit=crop&w=600&q=85"
+                                        onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22500%22 height=%22450%22 viewBox=%220 0 500 450%22><rect width=%22500%22 height=%22450%22 fill=%22%23C87D32%22/><text x=%2250%25%22 y=%2250%25%22 font-family=%22Georgia,serif%22 font-size=%2222%22 fill=%22%23FAF6F0%22 text-anchor=%22middle%22>Orchard Livestock Aid</text></svg>';"
+                                        alt="Cattle grazing peacefully in mountain pasture"
+                                        class="w-full h-44 sm:h-52 object-cover"
+                                    >
+                                </div>
+                                <div class="p-5 rounded-3xl bg-pine text-pashmina shadow-card">
+                                    <p class="font-serif text-2xl font-semibold text-saffron-glow">192303</p>
+                                    <p class="text-xs text-emerald-100/85 mt-1 leading-relaxed">
+                                        Rooted in District Shopian, South Kashmir—where apple orchards meet the Pir Panjal foothills.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Layered Floating Badge -->
+                        <div class="mt-4 sm:mt-0 sm:absolute sm:-bottom-6 sm:left-6 bg-white border border-pashmina-border rounded-2xl px-5 py-3.5 shadow-editorial flex items-center gap-3.5 max-w-sm">
+                            <div class="w-10 h-10 rounded-xl bg-saffron-light text-saffron flex items-center justify-center shrink-0">
+                                <i data-lucide="mountain-snow" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold uppercase tracking-wider text-pine">Seasonal Reality</p>
+                                <p class="text-xs text-pashmina-muted mt-0.5">Sub-zero nights &amp; Mughal Road transit demand rapid local triage.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Editorial Narrative & 3 Pillar Badges -->
+                <div class="lg:col-span-6 space-y-6 reveal">
+                    <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-saffron">
+                        <span class="w-6 h-[2px] bg-saffron"></span>
+                        <span>About the Initiative Concept</span>
+                    </div>
+
+                    <h2 class="font-serif font-semibold text-3xl sm:text-4xl lg:text-[42px] text-pine leading-[1.15]">
+                        Built for Kashmir’s Terrain &amp; Seasons.
+                    </h2>
+
+                    <p class="text-pashmina-muted text-base leading-relaxed">
+                        In <strong class="text-pine font-semibold">District Shopian, Jammu &amp; Kashmir</strong>, high-altitude winters (<em class="text-pine">Chillai Kalan</em>), busy fruit-harvest transport along apple orchard roads, and steep stretches toward <strong class="text-pine font-semibold">Mughal Road and Hirpora</strong> create urgent veterinary challenges for street dogs, livestock, and injured birds.
+                    </p>
+
+                    <p class="text-pashmina-muted text-base leading-relaxed">
+                        This UI/UX web concept demonstrates how local volunteers, neighborhood feeders, and veterinary responders in <strong class="text-pine font-semibold">Shopian Town and Arhama</strong> can organize rapid road trauma triage, humane vaccination drives, and insulated winter shelters with complete cost transparency.
+                    </p>
+
+                    <!-- 3 Crisp Pillar Badges -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-2">
+                        <div class="p-4 rounded-2xl bg-white border border-pashmina-border shadow-card">
+                            <div class="w-9 h-9 rounded-xl bg-saffron-light text-saffron flex items-center justify-center mb-3">
+                                <i data-lucide="ambulance" class="w-4 h-4"></i>
+                            </div>
+                            <h3 class="font-serif font-semibold text-base text-pine leading-snug">Rapid Road Trauma Triage</h3>
+                            <p class="text-xs text-pashmina-muted mt-1">First-aid splinting &amp; wound care on orchard &amp; highway routes.</p>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-white border border-pashmina-border shadow-card">
+                            <div class="w-9 h-9 rounded-xl bg-pine-mist text-pine-sage flex items-center justify-center mb-3">
+                                <i data-lucide="syringe" class="w-4 h-4"></i>
+                            </div>
+                            <h3 class="font-serif font-semibold text-base text-pine leading-snug">Anti-Rabies &amp; ABC Drives</h3>
+                            <p class="text-xs text-pashmina-muted mt-1">Humane population care &amp; annual immunization across wards.</p>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-white border border-pashmina-border shadow-card">
+                            <div class="w-9 h-9 rounded-xl bg-saffron-light text-saffron flex items-center justify-center mb-3">
+                                <i data-lucide="home" class="w-4 h-4"></i>
+                            </div>
+                            <h3 class="font-serif font-semibold text-base text-pine leading-snug">Winter Shelter &amp; Nutrition</h3>
+                            <p class="text-xs text-pashmina-muted mt-1">Reflective thermal coats, dry straw kennels &amp; warm meals.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 5. VETERINARY CARE PROGRAMS SECTION ==================== -->
+    <section id="programs" class="py-20 sm:py-28 bg-pashmina-sand/70 border-y border-pashmina-border bg-kashmir-grid">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header + Filter Pills -->
+            <div class="text-center max-w-3xl mx-auto space-y-4 reveal">
+                <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-saffron">
+                    <span class="w-6 h-[2px] bg-saffron"></span>
+                    <span>Veterinary Care Programs</span>
+                    <span class="w-6 h-[2px] bg-saffron"></span>
+                </div>
+                <h2 class="font-serif font-semibold text-3xl sm:text-4xl lg:text-[42px] text-pine leading-tight">
+                    Targeted Field Programs Across Shopian
+                </h2>
+                <p class="text-pashmina-muted text-sm sm:text-base">
+                    Filter care initiatives by category or click <strong class="text-pine">Sponsor This Program</strong> to load its estimated unit cost directly into the aid calculator below.
+                </p>
+
+                <!-- Interactive Filter Pills -->
+                <div id="program-filters" role="tablist" aria-label="Filter Veterinary Care Programs" class="flex flex-wrap justify-center gap-2.5 pt-4">
+                    <button type="button" data-filter="all" class="filter-pill active px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold bg-pine text-white shadow-sm transition">
+                        All Programs
+                    </button>
+                    <button type="button" data-filter="emergency" class="filter-pill px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold bg-white text-pashmina-ink border border-pashmina-border hover:border-pine transition">
+                        Emergency &amp; Winter
+                    </button>
+                    <button type="button" data-filter="vaccination" class="filter-pill px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold bg-white text-pashmina-ink border border-pashmina-border hover:border-pine transition">
+                        Vaccination &amp; ABC
+                    </button>
+                    <button type="button" data-filter="shelter" class="filter-pill px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold bg-white text-pashmina-ink border border-pashmina-border hover:border-pine transition">
+                        Shelter &amp; Nutrition
+                    </button>
+                </div>
+            </div>
+
+            <!-- 6 Program Cards Grid -->
+            <div id="programs-grid" class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+
+                <!-- Program Card 1 -->
+                <article data-category="emergency" class="program-card reveal bg-white rounded-3xl overflow-hidden border border-pashmina-border shadow-card hover:shadow-editorial hover:-translate-y-1.5 transition duration-300 flex flex-col">
+                    <div class="relative h-52 overflow-hidden bg-pine-spruce">
+                        <img
+                            src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&w=750&q=85"
+                            onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22700%22 height=%22450%22 viewBox=%220 0 700 450%22><rect width=%22700%22 height=%22450%22 fill=%22%230B2B26%22/><text x=%2250%25%22 y=%2250%25%22 font-family=%22Georgia,serif%22 font-size=%2224%22 fill=%22%23FAF6F0%22 text-anchor=%22middle%22>Emergency Trauma First-Aid</text></svg>';"
+                            alt="Veterinarian gently examining an injured dog"
+                            class="w-full h-full object-cover hover:scale-105 transition duration-500"
+                        >
+                        <span class="absolute top-3.5 left-3.5 bg-saffron text-white text-[11px] font-bold px-3 py-1 rounded-full shadow">
+                            Emergency &amp; Winter
+                        </span>
+                        <span class="absolute top-3.5 right-3.5 bg-pine/90 backdrop-blur-sm text-pashmina text-[11px] font-semibold px-3 py-1 rounded-full">
+                            Est. ₹500 / kit
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-5">
+                        <div>
+                            <div class="flex items-center gap-1.5 text-xs font-semibold text-pine-sage mb-2">
+                                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-saffron"></i>
+                                <span>Shopian Town &amp; Arhama</span>
+                            </div>
+                            <h3 class="font-serif font-semibold text-xl text-pine leading-snug">
+                                Urban Street Trauma &amp; Wound Stabilization
+                            </h3>
+                            <p class="text-sm text-pashmina-muted mt-2 leading-relaxed">
+                                Rapid antiseptic dressing, pain-relief medication, and fracture splinting for street dogs and cats injured in market lanes and Hospital Road traffic.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-pashmina-border flex items-center justify-between">
+                            <span class="text-xs font-medium text-pashmina-muted">Unit Aid: <strong class="text-pine">₹500</strong></span>
+                            <button type="button" data-sponsor-amount="500" data-sponsor-name="Urban Street Trauma & Wound Stabilization" class="sponsor-btn inline-flex items-center gap-1.5 text-xs font-bold text-saffron hover:text-saffron-hover transition">
+                                <span>Sponsor This Program</span>
+                                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Program Card 2 -->
+                <article data-category="emergency" class="program-card reveal bg-white rounded-3xl overflow-hidden border border-pashmina-border shadow-card hover:shadow-editorial hover:-translate-y-1.5 transition duration-300 flex flex-col">
+                    <div class="relative h-52 overflow-hidden bg-pine-spruce">
+                        <img
+                            src="https://images.unsplash.com/photo-1444464666168-49d633b86797?auto=format&fit=crop&w=750&q=85"
+                            onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22700%22 height=%22450%22 viewBox=%220 0 700 450%22><rect width=%22700%22 height=%22450%22 fill=%22%23133E37%22/><text x=%2250%25%22 y=%2250%25%22 font-family=%22Georgia,serif%22 font-size=%2224%22 fill=%22%23FAF6F0%22 text-anchor=%22middle%22>Mughal Road &amp; Hirpora Rescue</text></svg>';"
+                            alt="Mountain bird resting safely during cold weather care"
+                            class="w-full h-full object-cover hover:scale-105 transition duration-500"
+                        >
+                        <span class="absolute top-3.5 left-3.5 bg-saffron text-white text-[11px] font-bold px-3 py-1 rounded-full shadow">
+                            Emergency &amp; Winter
+                        </span>
+                        <span class="absolute top-3.5 right-3.5 bg-pine/90 backdrop-blur-sm text-pashmina text-[11px] font-semibold px-3 py-1 rounded-full">
+                            Est. ₹1,500 / response
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-5">
+                        <div>
+                            <div class="flex items-center gap-1.5 text-xs font-semibold text-pine-sage mb-2">
+                                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-saffron"></i>
+                                <span>Mughal Road &amp; Hirpora</span>
+                            </div>
+                            <h3 class="font-serif font-semibold text-xl text-pine leading-snug">
+                                High-Altitude Snow &amp; Avian Frostbite Triage
+                            </h3>
+                            <p class="text-sm text-pashmina-muted mt-2 leading-relaxed">
+                                Thermal blankets, warm electrolyte fluids, and stabilization boxes for snow-stranded animals and frostbitten birds along the Hirpora forest fringe.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-pashmina-border flex items-center justify-between">
+                            <span class="text-xs font-medium text-pashmina-muted">Unit Aid: <strong class="text-pine">₹1,500</strong></span>
+                            <button type="button" data-sponsor-amount="1500" data-sponsor-name="High-Altitude Snow & Avian Frostbite Triage" class="sponsor-btn inline-flex items-center gap-1.5 text-xs font-bold text-saffron hover:text-saffron-hover transition">
+                                <span>Sponsor This Program</span>
+                                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Program Card 3 -->
+                <article data-category="vaccination" class="program-card reveal bg-white rounded-3xl overflow-hidden border border-pashmina-border shadow-card hover:shadow-editorial hover:-translate-y-1.5 transition duration-300 flex flex-col">
+                    <div class="relative h-52 overflow-hidden bg-pine-spruce">
+                        <img
+                            src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=750&q=85"
+                            onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22700%22 height=%22450%22 viewBox=%220 0 700 450%22><rect width=%22700%22 height=%22450%22 fill=%22%232E6F5E%22/><text x=%2250%25%22 y=%2250%25%22 font-family=%22Georgia,serif%22 font-size=%2224%22 fill=%22%23FAF6F0%22 text-anchor=%22middle%22>Keller &amp; Zainapora ABC Drive</text></svg>';"
+                            alt="Healthy happy dog after community vaccination camp"
+                            class="w-full h-full object-cover hover:scale-105 transition duration-500"
+                        >
+                        <span class="absolute top-3.5 left-3.5 bg-pine-sage text-white text-[11px] font-bold px-3 py-1 rounded-full shadow">
+                            Vaccination &amp; ABC
+                        </span>
+                        <span class="absolute top-3.5 right-3.5 bg-pine/90 backdrop-blur-sm text-pashmina text-[11px] font-semibold px-3 py-1 rounded-full">
+                            Est. ₹350 / dose
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-5">
+                        <div>
+                            <div class="flex items-center gap-1.5 text-xs font-semibold text-pine-sage mb-2">
+                                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-saffron"></i>
+                                <span>Keller &amp; Zainapora</span>
+                            </div>
+                            <h3 class="font-serif font-semibold text-xl text-pine leading-snug">
+                                Anti-Rabies &amp; Humane ABC Immunization Camps
+                            </h3>
+                            <p class="text-sm text-pashmina-muted mt-2 leading-relaxed">
+                                Ward-by-ward anti-rabies vaccination, deworming, and humane sterilization support to foster safe, healthy neighborhoods across Keller and Zainapora blocks.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-pashmina-border flex items-center justify-between">
+                            <span class="text-xs font-medium text-pashmina-muted">5 Doses: <strong class="text-pine">₹1,750</strong></span>
+                            <button type="button" data-sponsor-amount="1750" data-sponsor-name="Anti-Rabies & Humane ABC Immunization Camps" class="sponsor-btn inline-flex items-center gap-1.5 text-xs font-bold text-saffron hover:text-saffron-hover transition">
+                                <span>Sponsor This Program</span>
+                                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Program Card 4 -->
+                <article data-category="vaccination" class="program-card reveal bg-white rounded-3xl overflow-hidden border border-pashmina-border shadow-card hover:shadow-editorial hover:-translate-y-1.5 transition duration-300 flex flex-col">
+                    <div class="relative h-52 overflow-hidden bg-pine-spruce">
+                        <img
+                            src="https://images.unsplash.com/photo-1546445317-29f4545e9d53?auto=format&fit=crop&w=750&q=85"
+                            onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22700%22 height=%22450%22 viewBox=%220 0 700 450%22><rect width=%22700%22 height=%22450%22 fill=%22%230B2B26%22/><text x=%2250%25%22 y=%2250%25%22 font-family=%22Georgia,serif%22 font-size=%2224%22 fill=%22%23FAF6F0%22 text-anchor=%22middle%22>Sedow &amp; Orchard Belts</text></svg>';"
+                            alt="Cattle receiving preventative care in rural orchard belt"
+                            class="w-full h-full object-cover hover:scale-105 transition duration-500"
+                        >
+                        <span class="absolute top-3.5 left-3.5 bg-pine-sage text-white text-[11px] font-bold px-3 py-1 rounded-full shadow">
+                            Vaccination &amp; ABC
+                        </span>
+                        <span class="absolute top-3.5 right-3.5 bg-pine/90 backdrop-blur-sm text-pashmina text-[11px] font-semibold px-3 py-1 rounded-full">
+                            Est. ₹2,500 / camp
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-5">
+                        <div>
+                            <div class="flex items-center gap-1.5 text-xs font-semibold text-pine-sage mb-2">
+                                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-saffron"></i>
+                                <span>Sedow &amp; Orchard Belts</span>
+                            </div>
+                            <h3 class="font-serif font-semibold text-xl text-pine leading-snug">
+                                Orchard Belt Livestock &amp; Pack Animal Wellness
+                            </h3>
+                            <p class="text-sm text-pashmina-muted mt-2 leading-relaxed">
+                                Preventative deworming, hoof trimming, and mineral supplement distribution for stray cattle, sheep, and working horses across Sedow’s apple orchard villages.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-pashmina-border flex items-center justify-between">
+                            <span class="text-xs font-medium text-pashmina-muted">Unit Aid: <strong class="text-pine">₹2,500</strong></span>
+                            <button type="button" data-sponsor-amount="2500" data-sponsor-name="Orchard Belt Livestock & Pack Animal Wellness" class="sponsor-btn inline-flex items-center gap-1.5 text-xs font-bold text-saffron hover:text-saffron-hover transition">
+                                <span>Sponsor This Program</span>
+                                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Program Card 5 -->
+                <article data-category="shelter" class="program-card reveal bg-white rounded-3xl overflow-hidden border border-pashmina-border shadow-card hover:shadow-editorial hover:-translate-y-1.5 transition duration-300 flex flex-col">
+                    <div class="relative h-52 overflow-hidden bg-pine-spruce">
+                        <img
+                            src="https://images.unsplash.com/photo-1591160690555-5debfba289f0?auto=format&fit=crop&w=750&q=85"
+                            onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22700%22 height=%22450%22 viewBox=%220 0 700 450%22><rect width=%22700%22 height=%22450%22 fill=%22%23C87D32%22/><text x=%2250%25%22 y=%2250%25%22 font-family=%22Georgia,serif%22 font-size=%2224%22 fill=%22%23FAF6F0%22 text-anchor=%22middle%22>District-Wide Winter Drive</text></svg>';"
+                            alt="Young puppies staying warm and nourished"
+                            class="w-full h-full object-cover hover:scale-105 transition duration-500"
+                        >
+                        <span class="absolute top-3.5 left-3.5 bg-pine text-white text-[11px] font-bold px-3 py-1 rounded-full shadow">
+                            Shelter &amp; Nutrition
+                        </span>
+                        <span class="absolute top-3.5 right-3.5 bg-pine/90 backdrop-blur-sm text-pashmina text-[11px] font-semibold px-3 py-1 rounded-full">
+                            Est. ₹750 / coat
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-5">
+                        <div>
+                            <div class="flex items-center gap-1.5 text-xs font-semibold text-pine-sage mb-2">
+                                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-saffron"></i>
+                                <span>District-Wide Winter Drive</span>
+                            </div>
+                            <h3 class="font-serif font-semibold text-xl text-pine leading-snug">
+                                Reflective Thermal Coats &amp; Warm Meal Bowls
+                            </h3>
+                            <p class="text-sm text-pashmina-muted mt-2 leading-relaxed">
+                                High-visibility insulated winter jackets (preventing night road collisions) paired with calorie-rich warm meals during sub-zero December–February nights.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-pashmina-border flex items-center justify-between">
+                            <span class="text-xs font-medium text-pashmina-muted">2 Coats + Meals: <strong class="text-pine">₹2,000</strong></span>
+                            <button type="button" data-sponsor-amount="2000" data-sponsor-name="Reflective Thermal Coats & Warm Meal Bowls" class="sponsor-btn inline-flex items-center gap-1.5 text-xs font-bold text-saffron hover:text-saffron-hover transition">
+                                <span>Sponsor This Program</span>
+                                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Program Card 6 -->
+                <article data-category="shelter" class="program-card reveal bg-white rounded-3xl overflow-hidden border border-pashmina-border shadow-card hover:shadow-editorial hover:-translate-y-1.5 transition duration-300 flex flex-col">
+                    <div class="relative h-52 overflow-hidden bg-pine-spruce">
+                        <img
+                            src="https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&w=750&q=85"
+                            onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22700%22 height=%22450%22 viewBox=%220 0 700 450%22><rect width=%22700%22 height=%22450%22 fill=%22%232E6F5E%22/><text x=%2250%25%22 y=%2250%25%22 font-family=%22Georgia,serif%22 font-size=%2224%22 fill=%22%23FAF6F0%22 text-anchor=%22middle%22>Community Foster Network</text></svg>';"
+                            alt="Healthy recovered dog running joyfully outdoors"
+                            class="w-full h-full object-cover hover:scale-105 transition duration-500"
+                        >
+                        <span class="absolute top-3.5 left-3.5 bg-pine text-white text-[11px] font-bold px-3 py-1 rounded-full shadow">
+                            Shelter &amp; Nutrition
+                        </span>
+                        <span class="absolute top-3.5 right-3.5 bg-pine/90 backdrop-blur-sm text-pashmina text-[11px] font-semibold px-3 py-1 rounded-full">
+                            Est. ₹3,500 / foster kit
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-5">
+                        <div>
+                            <div class="flex items-center gap-1.5 text-xs font-semibold text-pine-sage mb-2">
+                                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-saffron"></i>
+                                <span>Community Foster Network</span>
+                            </div>
+                            <h3 class="font-serif font-semibold text-xl text-pine leading-snug">
+                                Post-Op Recovery &amp; Local Foster Bedding Kits
+                            </h3>
+                            <p class="text-sm text-pashmina-muted mt-2 leading-relaxed">
+                                Equipping volunteer foster homes across Shopian with insulated wooden kennels, dry straw bedding, and puppy/kitten milk replacers during recovery.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-pashmina-border flex items-center justify-between">
+                            <span class="text-xs font-medium text-pashmina-muted">Unit Aid: <strong class="text-pine">₹3,500</strong></span>
+                            <button type="button" data-sponsor-amount="3500" data-sponsor-name="Post-Op Recovery & Local Foster Bedding Kits" class="sponsor-btn inline-flex items-center gap-1.5 text-xs font-bold text-saffron hover:text-saffron-hover transition">
+                                <span>Sponsor This Program</span>
+                                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 6. INTERACTIVE INR AID & IMPACT CALCULATOR ==================== -->
+    <section id="calculator" class="py-20 sm:py-28 bg-pine text-white relative overflow-hidden">
+        <!-- Subtle Decorative Glow -->
+        <div class="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[780px] h-[340px] bg-saffron/10 blur-3xl rounded-full"></div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+
+                <!-- Left Editorial Narrative -->
+                <div class="lg:col-span-5 space-y-5 reveal">
+                    <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-saffron-glow">
+                        <span class="w-6 h-[2px] bg-saffron-glow"></span>
+                        <span>Transparent Aid Calculator</span>
+                    </div>
+                    <h2 class="font-serif font-semibold text-3xl sm:text-4xl lg:text-[42px] text-pashmina leading-[1.15]">
+                        Model Your Veterinary Impact in Shopian.
+                    </h2>
+                    <p class="text-emerald-100/85 text-sm sm:text-base leading-relaxed">
+                        Slide to adjust an estimated contribution in Indian Rupees (₹) and see the exact medical supplies, winter coats, and warm meals funded at transparent unit rates.
+                    </p>
+
+                    <!-- Unit Rate Reference Pill Box -->
+                    <div class="p-4 rounded-2xl bg-pine-spruce/90 border border-emerald-700/50 space-y-2 text-xs text-emerald-100/90">
+                        <p class="font-bold uppercase tracking-wider text-saffron-glow text-[11px]">Transparent Unit Benchmarks</p>
+                        <div class="grid grid-cols-2 gap-2 pt-1">
+                            <span>• Vaccine Dose: <strong>₹350</strong></span>
+                            <span>• Trauma Kit: <strong>₹500</strong></span>
+                            <span>• Thermal Coat: <strong>₹750</strong></span>
+                            <span>• Warm Meal: <strong>₹50</strong></span>
+                        </div>
+                    </div>
+
+                    <p id="selected-program-banner" class="hidden text-xs bg-saffron/20 border border-saffron/40 text-pashmina px-4 py-2.5 rounded-xl">
+                        Selected Focus: <strong id="selected-program-label">General Shopian Veterinary Fund</strong>
+                    </p>
+                </div>
+
+                <!-- Right Interactive Calculator Card -->
+                <div class="lg:col-span-7 reveal bg-pashmina text-pashmina-ink rounded-[32px] p-6 sm:p-10 shadow-2xl border border-pashmina-border">
+
+                    <!-- Frequency Toggle + Live Amount Display -->
+                    <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+                        <div role="group" aria-label="Aid Frequency" class="inline-flex p-1 rounded-2xl bg-pashmina-sand border border-pashmina-border">
+                            <button type="button" id="freq-onetime" class="freq-toggle px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-pine text-white shadow-sm transition">
+                                One-Time Support
+                            </button>
+                            <button type="button" id="freq-monthly" class="freq-toggle px-4 py-2 rounded-xl text-xs sm:text-sm font-bold text-pashmina-muted hover:text-pine transition">
+                                Monthly Winter Guardian
+                            </button>
+                        </div>
+
+                        <div class="bg-saffron-light border border-saffron/30 px-4 py-2 rounded-2xl text-right">
+                            <span class="font-serif font-bold text-2xl sm:text-3xl text-saffron">₹<span id="calc-amount-display">1,500</span></span>
+                            <span id="calc-freq-suffix" class="text-xs font-semibold text-pashmina-muted block sm:inline sm:ml-1">/ one-time</span>
+                        </div>
+                    </div>
+
+                    <!-- Quick Preset Chips -->
+                    <div class="grid grid-cols-4 gap-2.5 mb-6">
+                        <button type="button" data-preset="500" class="preset-chip py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-white border border-pashmina-border hover:border-saffron transition">
+                            ₹500
+                        </button>
+                        <button type="button" data-preset="1500" class="preset-chip py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-pine-mist border-2 border-pine text-pine transition">
+                            ₹1,500
+                        </button>
+                        <button type="button" data-preset="3500" class="preset-chip py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-white border border-pashmina-border hover:border-saffron transition">
+                            ₹3,500
+                        </button>
+                        <button type="button" data-preset="10000" class="preset-chip py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-white border border-pashmina-border hover:border-saffron transition">
+                            ₹10,000
+                        </button>
+                    </div>
+
+                    <!-- Custom Saffron Range Slider (₹300 to ₹25,000) -->
+                    <div class="mb-8">
+                        <label for="aid-slider" class="sr-only">Aid Amount Slider in Indian Rupees</label>
+                        <input id="aid-slider" type="range" min="300" max="25000" step="100" value="1500" class="saffron-slider">
+                        <div class="flex justify-between text-[11px] font-semibold text-pashmina-muted mt-2">
+                            <span>₹300</span>
+                            <span>₹8,000</span>
+                            <span>₹16,000</span>
+                            <span>₹25,000</span>
+                        </div>
+                    </div>
+
+                    <!-- Live Animated Breakdown Cards (4 Metrics) -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+                        <div class="bg-white p-4 rounded-2xl border border-pashmina-border text-center shadow-sm">
+                            <div class="w-8 h-8 rounded-lg bg-pine-mist text-pine-sage flex items-center justify-center mx-auto mb-2">
+                                <i data-lucide="syringe" class="w-4 h-4"></i>
+                            </div>
+                            <p id="stat-vaccines" class="font-serif font-bold text-2xl text-pine">4</p>
+                            <p class="text-[11px] font-medium text-pashmina-muted mt-1 leading-tight">Anti-Rabies Vaccine Doses</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-2xl border border-pashmina-border text-center shadow-sm">
+                            <div class="w-8 h-8 rounded-lg bg-saffron-light text-saffron flex items-center justify-center mx-auto mb-2">
+                                <i data-lucide="briefcase-medical" class="w-4 h-4"></i>
+                            </div>
+                            <p id="stat-kits" class="font-serif font-bold text-2xl text-pine">3</p>
+                            <p class="text-[11px] font-medium text-pashmina-muted mt-1 leading-tight">Trauma &amp; Antibiotic Kits</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-2xl border border-pashmina-border text-center shadow-sm">
+                            <div class="w-8 h-8 rounded-lg bg-pine-mist text-pine flex items-center justify-center mx-auto mb-2">
+                                <i data-lucide="shirt" class="w-4 h-4"></i>
+                            </div>
+                            <p id="stat-coats" class="font-serif font-bold text-2xl text-pine">2</p>
+                            <p class="text-[11px] font-medium text-pashmina-muted mt-1 leading-tight">Thermal Winter Coats &amp; Bedding</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-2xl border border-pashmina-border text-center shadow-sm">
+                            <div class="w-8 h-8 rounded-lg bg-saffron-light text-saffron flex items-center justify-center mx-auto mb-2">
+                                <i data-lucide="utensils" class="w-4 h-4"></i>
+                            </div>
+                            <p id="stat-meals" class="font-serif font-bold text-2xl text-pine">30</p>
+                            <p class="text-[11px] font-medium text-pashmina-muted mt-1 leading-tight">Warm Nutritious Meals</p>
+                        </div>
+                    </div>
+
+                    <!-- Preview Aid Pledge Summary Button -->
+                    <button id="open-pledge-modal" type="button" class="w-full bg-saffron hover:bg-saffron-hover text-white font-semibold py-4 rounded-2xl shadow-saffronGlow transition flex items-center justify-center gap-2.5 text-sm sm:text-base">
+                        <i data-lucide="file-check-2" class="w-5 h-5"></i>
+                        <span>Preview Aid Pledge Summary — ₹<span id="cta-amount-label">1,500</span></span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 7. FIELD NOTES & COMMUNITY STORIES SECTION ==================== -->
+    <section id="field-notes" class="py-20 sm:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12 reveal">
+                <div>
+                    <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-saffron mb-2">
+                        <span class="w-6 h-[2px] bg-saffron"></span>
+                        <span>Field Notes &amp; Community Stories</span>
+                    </div>
+                    <h2 class="font-serif font-semibold text-3xl sm:text-4xl lg:text-[42px] text-pine leading-tight">
+                        Ground Realities Across District Shopian
+                    </h2>
+                </div>
+                <p class="text-pashmina-muted text-sm max-w-md leading-relaxed">
+                    Illustrative case scenarios demonstrating how local volunteers, orchard keepers, and veterinary triage protect Shopian’s animals.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+                <!-- Field Note 1 -->
+                <article class="reveal bg-white rounded-3xl overflow-hidden border border-pashmina-border shadow-card flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-52 overflow-hidden bg-pine-spruce">
+                            <img
+                                src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=700&q=85"
+                                onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22450%22 viewBox=%220 0 600 450%22><rect width=%22600%22 height=%22450%22 fill=%22%230B2B26%22/><text x=%2250%25%22 y=%2250%25%22 font-family=%22Georgia,serif%22 font-size=%2222%22 fill=%22%23FAF6F0%22 text-anchor=%22middle%22>Mughal Road Winter Triage</text></svg>';"
+                                alt="Rehabilitated mountain dog resting warmly"
+                                class="w-full h-full object-cover"
+                            >
+                            <span class="absolute bottom-3 left-3 bg-pine/90 backdrop-blur-sm text-pashmina text-[11px] font-semibold px-3 py-1 rounded-full">
+                                Hirpora • Mughal Road Stretch
+                            </span>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <p class="text-xs font-bold uppercase tracking-wider text-saffron">Winter Rescue Triage</p>
+                            <h3 class="font-serif font-semibold text-xl text-pine leading-snug">
+                                Sub-Zero Fracture Recovery Near Hirpora
+                            </h3>
+                            <p class="text-sm text-pashmina-muted leading-relaxed">
+                                When black ice along Mughal Road leaves a stray mountain dog with a bruised limb, responder <strong class="text-pine font-semibold">Tariq Ahmad</strong> coordinates warm straw boarding, anti-inflammatory care, and high-protein broth until full recovery.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 border-t border-pashmina-border flex items-center justify-between text-xs text-pashmina-muted">
+                        <span>Care Focus: Trauma + Thermal Coat</span>
+                        <span class="font-semibold text-pine-sage">Block: Hirpora</span>
+                    </div>
+                </article>
+
+                <!-- Field Note 2 -->
+                <article class="reveal bg-white rounded-3xl overflow-hidden border border-pashmina-border shadow-card flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-52 overflow-hidden bg-pine-spruce">
+                            <img
+                                src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=700&q=85"
+                                onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22450%22 viewBox=%220 0 600 450%22><rect width=%22600%22 height=%22450%22 fill=%22%232E6F5E%22/><text x=%2250%25%22 y=%2250%25%22 font-family=%22Georgia,serif%22 font-size=%2222%22 fill=%22%23FAF6F0%22 text-anchor=%22middle%22>Arhama Community Feeding</text></svg>';"
+                                alt="Healthy community dogs resting calmly in neighborhood"
+                                class="w-full h-full object-cover"
+                            >
+                            <span class="absolute bottom-3 left-3 bg-pine/90 backdrop-blur-sm text-pashmina text-[11px] font-semibold px-3 py-1 rounded-full">
+                                Arhama &amp; Hospital Road
+                            </span>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <p class="text-xs font-bold uppercase tracking-wider text-saffron">Vaccination &amp; Feeding</p>
+                            <h3 class="font-serif font-semibold text-xl text-pine leading-snug">
+                                Evening Feeding &amp; Anti-Rabies Drive in Arhama
+                            </h3>
+                            <p class="text-sm text-pashmina-muted leading-relaxed">
+                                Student volunteer <strong class="text-pine font-semibold">Mehvish Jan</strong> and local shopkeepers near Hospital Road maintain clean evening feeding corners and track annual anti-rabies boosters so neighborhood dogs stay calm and healthy.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 border-t border-pashmina-border flex items-center justify-between text-xs text-pashmina-muted">
+                        <span>Care Focus: Immunization + Meals</span>
+                        <span class="font-semibold text-pine-sage">Block: Shopian Town</span>
+                    </div>
+                </article>
+
+                <!-- Field Note 3 -->
+                <article class="reveal bg-white rounded-3xl overflow-hidden border border-pashmina-border shadow-card flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-52 overflow-hidden bg-pine-spruce">
+                            <img
+                                src="https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?auto=format&fit=crop&w=700&q=85"
+                                onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22450%22 viewBox=%220 0 600 450%22><rect width=%22600%22 height=%22450%22 fill=%22%23C87D32%22/><text x=%2250%25%22 y=%2250%25%22 font-family=%22Georgia,serif%22 font-size=%2222%22 fill=%22%23FAF6F0%22 text-anchor=%22middle%22>Orchard Belt Livestock Outreach</text></svg>';"
+                                alt="Healthy cow standing calmly in mountain meadow"
+                                class="w-full h-full object-cover"
+                            >
+                            <span class="absolute bottom-3 left-3 bg-pine/90 backdrop-blur-sm text-pashmina text-[11px] font-semibold px-3 py-1 rounded-full">
+                                Keller &amp; Sedow Orchard Belt
+                            </span>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <p class="text-xs font-bold uppercase tracking-wider text-saffron">Orchard Belt Outreach</p>
+                            <h3 class="font-serif font-semibold text-xl text-pine leading-snug">
+                                Hoof &amp; Fodder Support in Keller Apple Villages
+                            </h3>
+                            <p class="text-sm text-pashmina-muted leading-relaxed">
+                                Alongside orchard grower <strong class="text-pine font-semibold">Farooq Tantray</strong>, seasonal outreach camps deliver mineral licks, deworming doses, and minor wound care for stray cattle and pack animals in Keller and Sedow.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 border-t border-pashmina-border flex items-center justify-between text-xs text-pashmina-muted">
+                        <span>Care Focus: Livestock First-Aid</span>
+                        <span class="font-semibold text-pine-sage">Block: Keller &amp; Sedow</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 8. SHOPIAN LOCAL DESK & VOLUNTEER / CASE REPORT FORM ==================== -->
+    <section id="shopian-desk" class="py-20 sm:py-28 bg-pashmina-sand/80 border-t border-pashmina-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+
+                <!-- Left Column: Real Civic Reference & District Block Coverage -->
+                <div class="lg:col-span-5 space-y-6 reveal">
+                    <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-saffron">
+                        <span class="w-6 h-[2px] bg-saffron"></span>
+                        <span>Shopian Local Desk</span>
+                    </div>
+                    <h2 class="font-serif font-semibold text-3xl sm:text-4xl text-pine leading-tight">
+                        Anchored in District Shopian, Jammu &amp; Kashmir.
+                    </h2>
+                    <p class="text-sm sm:text-base text-pashmina-muted leading-relaxed">
+                        Every locality, landmark, and civic reference on this platform is grounded in District Shopian (PIN 192303), with zero fictional helpline numbers or fake registration numbers.
+                    </p>
+
+                    <!-- Primary District Location Card -->
+                    <div class="bg-pine text-white rounded-3xl p-6 shadow-editorial space-y-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-saffron text-white flex items-center justify-center shrink-0">
+                                <i data-lucide="map-pin" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-[11px] font-bold uppercase tracking-wider text-saffron-glow">Concept Hub Reference</p>
+                                <h3 class="font-serif font-semibold text-lg text-pashmina">Arhama / Hospital Road Corridor</h3>
+                            </div>
+                        </div>
+                        <p class="text-sm text-emerald-100/90 leading-relaxed">
+                            Hospital Road / Mini Secretariat Road, Arhama, Shopian Town, District Shopian, Jammu &amp; Kashmir – 192303, India
+                        </p>
+                    </div>
+
+                    <!-- Real Civic Veterinary Reference Box -->
+                    <div class="bg-white rounded-3xl p-6 border border-pashmina-border shadow-card space-y-2.5">
+                        <div class="flex items-center gap-2.5 text-pine">
+                            <i data-lucide="building-2" class="w-5 h-5 text-saffron shrink-0"></i>
+                            <h3 class="font-serif font-semibold text-base">On-Ground Civic Veterinary Authority</h3>
+                        </div>
+                        <p class="text-xs sm:text-sm text-pashmina-muted leading-relaxed">
+                            For real on-ground veterinary emergencies or livestock medical services in District Shopian, please reach out directly to the <strong class="text-pine">District Sheep &amp; Animal Husbandry Office, Mini Secretariat Complex, Arhama, Shopian (J&amp;K – 192303)</strong>.
+                        </p>
+                    </div>
+
+                    <!-- 6 District Block Coverage Pills -->
+                    <div class="bg-white rounded-3xl p-6 border border-pashmina-border shadow-card">
+                        <p class="text-xs font-bold uppercase tracking-wider text-pine mb-3">Mapped Shopian District Blocks</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3.5 py-1.5 rounded-full bg-pine-mist text-pine text-xs font-semibold">Shopian Town</span>
+                            <span class="px-3.5 py-1.5 rounded-full bg-pine-mist text-pine text-xs font-semibold">Arhama</span>
+                            <span class="px-3.5 py-1.5 rounded-full bg-pine-mist text-pine text-xs font-semibold">Keller</span>
+                            <span class="px-3.5 py-1.5 rounded-full bg-pine-mist text-pine text-xs font-semibold">Zainapora</span>
+                            <span class="px-3.5 py-1.5 rounded-full bg-pine-mist text-pine text-xs font-semibold">Hirpora</span>
+                            <span class="px-3.5 py-1.5 rounded-full bg-pine-mist text-pine text-xs font-semibold">Sedow</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Interactive Local Volunteer, Feeder & Case Report Form -->
+                <div class="lg:col-span-7 reveal bg-white rounded-[32px] p-6 sm:p-10 border border-pashmina-border shadow-editorial">
+                    <div class="mb-6">
+                        <span class="inline-block text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-saffron-light text-saffron mb-2">
+                            Interactive Prototype Form
+                        </span>
+                        <h3 class="font-serif font-semibold text-2xl sm:text-3xl text-pine">
+                            Local Volunteer, Feeder &amp; Case Report Form
+                        </h3>
+                        <p class="text-sm text-pashmina-muted mt-1">
+                            Log a simulated animal care report, register as a neighborhood feeder, or volunteer for winter drives across District Shopian.
+                        </p>
+                    </div>
+
+                    <form id="local-desk-form" novalidate class="space-y-5">
+                        <!-- Full Name -->
+                        <div>
+                            <label for="applicant-name" class="block text-xs font-bold uppercase tracking-wider text-pine mb-1.5">
+                                Your Full Name *
+                            </label>
+                            <input type="text" id="applicant-name" name="applicantName" required placeholder="e.g., Mahdi Nawaz" class="w-full px-4 py-3 rounded-2xl bg-pashmina/60 border border-pashmina-border text-sm text-pashmina-ink placeholder-pashmina-muted/60 focus:outline-none focus:bg-white focus:border-pine focus:ring-2 focus:ring-pine/15 transition">
+                            <p id="err-name" class="hidden text-xs text-red-600 mt-1.5 font-medium">Please enter your full name.</p>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <!-- Block / Locality Dropdown -->
+                            <div>
+                                <label for="shopian-locality" class="block text-xs font-bold uppercase tracking-wider text-pine mb-1.5">
+                                    Block / Locality in Shopian *
+                                </label>
+                                <select id="shopian-locality" name="shopianLocality" required class="w-full px-4 py-3 rounded-2xl bg-pashmina/60 border border-pashmina-border text-sm text-pashmina-ink focus:outline-none focus:bg-white focus:border-pine focus:ring-2 focus:ring-pine/15 transition">
+                                    <option value="">Select a Shopian locality...</option>
+                                    <option value="Shopian Town (Hospital Road / Main Market)">Shopian Town (Hospital Road / Main Market)</option>
+                                    <option value="Arhama (Mini Secretariat Vicinity)">Arhama (Mini Secretariat Vicinity)</option>
+                                    <option value="Keller Block">Keller Block</option>
+                                    <option value="Zainapora Block">Zainapora Block</option>
+                                    <option value="Hirpora & Mughal Road Stretch">Hirpora &amp; Mughal Road Stretch</option>
+                                    <option value="Sedow & Orchard Villages">Sedow &amp; Orchard Villages</option>
+                                </select>
+                                <p id="err-locality" class="hidden text-xs text-red-600 mt-1.5 font-medium">Please select a block or locality in Shopian.</p>
+                            </div>
+
+                            <!-- Role / Submission Type -->
+                            <div>
+                                <label for="submission-role" class="block text-xs font-bold uppercase tracking-wider text-pine mb-1.5">
+                                    Submission Role / Type *
+                                </label>
+                                <select id="submission-role" name="submissionRole" class="w-full px-4 py-3 rounded-2xl bg-pashmina/60 border border-pashmina-border text-sm text-pashmina-ink focus:outline-none focus:bg-white focus:border-pine focus:ring-2 focus:ring-pine/15 transition">
+                                    <option value="Injured / Snow-Stranded Animal Report">Injured / Snow-Stranded Animal Report</option>
+                                    <option value="Neighborhood Community Feeder">Neighborhood Community Feeder</option>
+                                    <option value="Winter Drive & Vaccination Volunteer">Winter Drive &amp; Vaccination Volunteer</option>
+                                    <option value="Post-Op Foster Home Host">Post-Op Foster Home Host</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Landmark & Care Notes -->
+                        <div>
+                            <label for="case-notes" class="block text-xs font-bold uppercase tracking-wider text-pine mb-1.5">
+                                Landmark Details &amp; Care Notes *
+                            </label>
+                            <textarea id="case-notes" name="caseNotes" rows="4" required placeholder="Describe the nearest landmark in District Shopian, animal condition, or your volunteer availability..." class="w-full px-4 py-3 rounded-2xl bg-pashmina/60 border border-pashmina-border text-sm text-pashmina-ink placeholder-pashmina-muted/60 focus:outline-none focus:bg-white focus:border-pine focus:ring-2 focus:ring-pine/15 transition"></textarea>
+                            <p id="err-notes" class="hidden text-xs text-red-600 mt-1.5 font-medium">Please provide brief landmark details or care notes.</p>
+                        </div>
+
+                        <button type="submit" class="w-full bg-pine hover:bg-pine-spruce text-pashmina font-semibold py-4 rounded-2xl shadow-editorial transition flex items-center justify-center gap-2.5 text-sm sm:text-base">
+                            <i data-lucide="send" class="w-4 h-4 text-saffron-glow"></i>
+                            <span>Submit Local Desk Entry</span>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 9. DEEP PINE FOOTER ==================== -->
+    <footer class="bg-pine-deep text-emerald-100/80 pt-16 pb-10 border-t border-pine-spruce">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+
+                <!-- Brand Summary (5 cols) -->
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-pine-spruce border border-saffron/30 flex items-center justify-center text-saffron-glow">
+                            <i data-lucide="paw-print" class="w-5 h-5"></i>
+                        </div>
+                        <span class="font-serif font-semibold text-xl text-pashmina">Shopian Animal Care</span>
+                    </div>
+                    <p class="text-sm text-emerald-100/75 leading-relaxed max-w-md">
+                        A Kashmir Valley editorial web design concept illustrating community-driven veterinary triage, anti-rabies drives, and <em class="text-pashmina">Chillai Kalan</em> winter protection for animals in District Shopian, Jammu &amp; Kashmir.
+                    </p>
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs text-saffron-glow">
+                        <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                        <span>Educational &amp; Portfolio UI Concept • PIN 192303</span>
+                    </div>
+                </div>
+
+                <!-- Quick Links (3 cols) -->
+                <div class="lg:col-span-3">
+                    <h4 class="font-serif font-semibold text-pashmina text-base mb-4">Navigation</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#home" class="hover:text-saffron-glow transition">Overview</a></li>
+                        <li><a href="#about" class="hover:text-saffron-glow transition">About the Concept</a></li>
+                        <li><a href="#programs" class="hover:text-saffron-glow transition">Care Programs</a></li>
+                        <li><a href="#calculator" class="hover:text-saffron-glow transition">INR Aid Calculator</a></li>
+                        <li><a href="#field-notes" class="hover:text-saffron-glow transition">Field Notes</a></li>
+                        <li><a href="#shopian-desk" class="hover:text-saffron-glow transition">Shopian Local Desk</a></li>
+                    </ul>
+                </div>
+
+                <!-- Locality Index & Transparency Disclaimer (4 cols) -->
+                <div class="lg:col-span-4 space-y-4">
+                    <h4 class="font-serif font-semibold text-pashmina text-base">District Shopian Locality Index</h4>
+                    <p class="text-xs text-emerald-100/75 leading-relaxed">
+                        Shopian Town • Arhama • Hospital Road • Mini Secretariat Road • Keller • Zainapora • Hirpora • Mughal Road Stretch • Sedow (District Shopian, J&amp;K – 192303, India)
+                    </p>
+                    <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10 text-xs text-emerald-100/75 leading-relaxed">
+                        <strong class="text-pashmina">Transparency Notice:</strong> This website is an educational/portfolio UI design concept created for District Shopian, Jammu &amp; Kashmir. It is not a registered NGO, collects no real funds, and contains no fictional phone numbers or registration IDs.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-emerald-100/60">
+                <p>&copy; 2026 Shopian Animal Care — Kashmir Veterinary Aid &amp; Rescue Web Concept.</p>
+                <p>District Shopian, Jammu &amp; Kashmir – 192303, India</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== 10. TRANSPARENT PLEDGE PREVIEW MODAL ==================== -->
+    <div id="pledge-modal" role="dialog" aria-modal="true" aria-labelledby="pledge-modal-title" class="fixed inset-0 z-50 hidden items-center justify-center bg-pine-deep/75 backdrop-blur-sm p-4">
+        <div class="bg-pashmina text-pashmina-ink rounded-[30px] max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-pashmina-border relative">
+            <button id="close-pledge-modal" type="button" aria-label="Close Pledge Preview Modal" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-white border border-pashmina-border text-pine hover:bg-pashmina-sand flex items-center justify-center transition">
+                <i data-lucide="x" class="w-4 h-4"></i>
+            </button>
+
+            <div class="flex items-center gap-3 mb-5">
+                <div class="w-11 h-11 rounded-2xl bg-pine text-saffron-glow flex items-center justify-center shrink-0">
+                    <i data-lucide="file-check-2" class="w-5 h-5"></i>
+                </div>
+                <div>
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-saffron">Concept UI Demonstration</span>
+                    <h3 id="pledge-modal-title" class="font-serif font-semibold text-xl sm:text-2xl text-pine leading-tight">
+                        Aid Pledge Summary Preview
+                    </h3>
+                </div>
+            </div>
+
+            <!-- Itemized Pledge Breakdown Card -->
+            <div class="bg-white rounded-2xl p-5 border border-pashmina-border space-y-3 mb-5">
+                <div class="flex items-center justify-between pb-3 border-b border-pashmina-border">
+                    <div>
+                        <p class="text-xs font-semibold text-pashmina-muted">Contribution Tier</p>
+                        <p id="modal-tier-label" class="text-sm font-bold text-pine mt-0.5">One-Time Support</p>
+                    </div>
+                    <p class="font-serif font-bold text-2xl sm:text-3xl text-saffron">₹<span id="modal-total-amount">1,500</span></p>
+                </div>
+
+                <div class="text-xs text-pashmina-muted space-y-1.5">
+                    <p class="font-bold text-pine uppercase tracking-wider text-[11px]">Estimated Supply Allocation:</p>
+                    <div class="flex justify-between">
+                        <span>Anti-Rabies Vaccine Doses (₹350/dose)</span>
+                        <strong id="modal-vaccines" class="text-pine">4 doses</strong>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Trauma &amp; Antibiotic Kits (₹500/kit)</span>
+                        <strong id="modal-kits" class="text-pine">3 kits</strong>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Thermal Winter Coats &amp; Bedding (₹750/coat)</span>
+                        <strong id="modal-coats" class="text-pine">2 coats</strong>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Warm Nutritious Meals (₹50/meal)</span>
+                        <strong id="modal-meals" class="text-pine">30 meals</strong>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Explicit Prototype Notice -->
+            <div class="p-4 rounded-2xl bg-saffron-light border border-saffron/30 text-xs text-pashmina-ink leading-relaxed mb-6 flex items-start gap-3">
+                <i data-lucide="info" class="w-4 h-4 text-saffron shrink-0 mt-0.5"></i>
+                <p>
+                    <strong>UI Concept Demonstration Only:</strong> No real payment gateway is attached to this website, and no money is collected. This modal previews how a transparent pledge receipt works for District Shopian, J&amp;K.
+                </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3">
+                <button id="confirm-demo-pledge" type="button" class="flex-1 bg-pine hover:bg-pine-spruce text-pashmina font-semibold py-3.5 rounded-2xl transition flex items-center justify-center gap-2 text-sm">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-saffron-glow"></i>
+                    <span>Complete Demo Preview</span>
+                </button>
+                <button id="cancel-pledge-modal" type="button" class="px-5 py-3.5 rounded-2xl bg-white border border-pashmina-border text-pashmina-ink font-semibold text-sm hover:bg-pashmina-sand transition">
+                    Adjust Amount
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== 11. SLEEK TOAST NOTIFICATION ==================== -->
+    <div id="toast-banner" role="status" aria-live="polite" class="fixed bottom-5 right-5 z-50 max-w-sm w-[calc(100%-2.5rem)] bg-pine text-white p-4 rounded-2xl shadow-2xl border border-saffron/40 transform translate-y-28 opacity-0 pointer-events-none transition-all duration-300 flex items-start gap-3.5">
+        <div class="w-9 h-9 rounded-xl bg-saffron text-white flex items-center justify-center shrink-0 mt-0.5">
+            <i data-lucide="check" class="w-5 h-5"></i>
+        </div>
+        <div class="flex-1">
+            <h4 id="toast-title" class="font-serif font-semibold text-sm text-pashmina">Recorded</h4>
+            <p id="toast-body" class="text-xs text-emerald-100/85 mt-1 leading-relaxed">Your entry has been logged.</p>
+        </div>
+        <button id="close-toast" type="button" aria-label="Dismiss notification" class="text-emerald-200 hover:text-white p-1">
+            <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+    </div>
+
+    <!-- ==================== INTERACTIVE JAVASCRIPT ==================== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize Lucide Icons
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+
+            // 1. Mobile Navigation Drawer
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.toggle('hidden');
+                mobileMenuBtn.setAttribute('aria-expanded', String(!isHidden));
+            });
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            // 2. IntersectionObserver Scroll-Reveal Animations
+            const revealElements = document.querySelectorAll('.reveal');
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+
+            revealElements.forEach(el => revealObserver.observe(el));
+
+            // 3. Toast Notification Utility
+            const toastBanner = document.getElementById('toast-banner');
+            const toastTitle = document.getElementById('toast-title');
+            const toastBody = document.getElementById('toast-body');
+            const closeToastBtn = document.getElementById('close-toast');
+            let toastTimer;
+
+            function showToast(title, body) {
+                toastTitle.textContent = title;
+                toastBody.textContent = body;
+                toastBanner.classList.remove('translate-y-28', 'opacity-0', 'pointer-events-none');
+                clearTimeout(toastTimer);
+                toastTimer = setTimeout(hideToast, 6000);
+            }
+
+            function hideToast() {
+                toastBanner.classList.add('translate-y-28', 'opacity-0', 'pointer-events-none');
+            }
+
+            closeToastBtn.addEventListener('click', hideToast);
+
+            // 4. Veterinary Care Program Filter Pills
+            const filterPills = document.querySelectorAll('.filter-pill');
+            const programCards = document.querySelectorAll('.program-card');
+
+            filterPills.forEach(pill => {
+                pill.addEventListener('click', () => {
+                    const selectedFilter = pill.getAttribute('data-filter');
+
+                    filterPills.forEach(p => {
+                        p.classList.remove('active', 'bg-pine', 'text-white', 'shadow-sm');
+                        p.classList.add('bg-white', 'text-pashmina-ink', 'border', 'border-pashmina-border');
+                    });
+                    pill.classList.add('active', 'bg-pine', 'text-white', 'shadow-sm');
+                    pill.classList.remove('bg-white', 'text-pashmina-ink', 'border', 'border-pashmina-border');
+
+                    programCards.forEach(card => {
+                        const category = card.getAttribute('data-category');
+                        if (selectedFilter === 'all' || category === selectedFilter) {
+                            card.classList.remove('hidden');
+                            card.classList.add('is-visible');
+                        } else {
+                            card.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+
+            // 5. Interactive INR Aid & Impact Calculator
+            const aidSlider = document.getElementById('aid-slider');
+            const calcAmountDisplay = document.getElementById('calc-amount-display');
+            const ctaAmountLabel = document.getElementById('cta-amount-label');
+            const calcFreqSuffix = document.getElementById('calc-freq-suffix');
+            const presetChips = document.querySelectorAll('.preset-chip');
+            const freqOnetimeBtn = document.getElementById('freq-onetime');
+            const freqMonthlyBtn = document.getElementById('freq-monthly');
+
+            const statVaccines = document.getElementById('stat-vaccines');
+            const statKits = document.getElementById('stat-kits');
+            const statCoats = document.getElementById('stat-coats');
+            const statMeals = document.getElementById('stat-meals');
+
+            const selectedProgramBanner = document.getElementById('selected-program-banner');
+            const selectedProgramLabel = document.getElementById('selected-program-label');
+            const sponsorBtns = document.querySelectorAll('.sponsor-btn');
+
+            let aidFrequency = 'One-Time Support';
+
+            function updateSliderTrack(val) {
+                const min = Number(aidSlider.min);
+                const max = Number(aidSlider.max);
+                const pct = ((val - min) / (max - min)) * 100;
+                aidSlider.style.background = `linear-gradient(90deg, #C87D32 ${pct}%, #E6DFD3 ${pct}%)`;
+            }
+
+            function syncPresetHighlight(val) {
+                presetChips.forEach(chip => {
+                    const chipVal = Number(chip.getAttribute('data-preset'));
+                    if (chipVal === val) {
+                        chip.classList.remove('bg-white', 'border', 'border-pashmina-border');
+                        chip.classList.add('bg-pine-mist', 'border-2', 'border-pine', 'text-pine');
+                    } else {
+                        chip.classList.add('bg-white', 'border', 'border-pashmina-border');
+                        chip.classList.remove('bg-pine-mist', 'border-2', 'border-pine', 'text-pine');
+                    }
+                });
+            }
+
+            function updateCalculator(rawAmount) {
+                const amount = Math.min(25000, Math.max(300, Number(rawAmount)));
+                aidSlider.value = amount;
+                const formatted = amount.toLocaleString('en-IN');
+
+                calcAmountDisplay.textContent = formatted;
+                ctaAmountLabel.textContent = formatted;
+                updateSliderTrack(amount);
+                syncPresetHighlight(amount);
+
+                // Transparent Unit Benchmarks:
+                // Vaccine: ₹350 | Trauma Kit: ₹500 | Thermal Coat: ₹750 | Warm Meal: ₹50
+                const vaccines = Math.max(1, Math.floor(amount / 350));
+                const kits = Math.max(1, Math.floor(amount / 500));
+                const coats = Math.max(1, Math.floor(amount / 750));
+                const meals = Math.max(6, Math.floor(amount / 50));
+
+                statVaccines.textContent = vaccines.toLocaleString('en-IN');
+                statKits.textContent = kits.toLocaleString('en-IN');
+                statCoats.textContent = coats.toLocaleString('en-IN');
+                statMeals.textContent = meals.toLocaleString('en-IN');
+            }
+
+            aidSlider.addEventListener('input', (e) => {
+                updateCalculator(e.target.value);
+            });
+
+            presetChips.forEach(chip => {
+                chip.addEventListener('click', () => {
+                    updateCalculator(chip.getAttribute('data-preset'));
+                });
+            });
+
+            freqOnetimeBtn.addEventListener('click', () => {
+                aidFrequency = 'One-Time Support';
+                calcFreqSuffix.textContent = '/ one-time';
+                freqOnetimeBtn.classList.add('bg-pine', 'text-white', 'shadow-sm');
+                freqOnetimeBtn.classList.remove('text-pashmina-muted');
+                freqMonthlyBtn.classList.remove('bg-pine', 'text-white', 'shadow-sm');
+                freqMonthlyBtn.classList.add('text-pashmina-muted');
+            });
+
+            freqMonthlyBtn.addEventListener('click', () => {
+                aidFrequency = 'Monthly Winter Guardian';
+                calcFreqSuffix.textContent = '/ month';
+                freqMonthlyBtn.classList.add('bg-pine', 'text-white', 'shadow-sm');
+                freqMonthlyBtn.classList.remove('text-pashmina-muted');
+                freqOnetimeBtn.classList.remove('bg-pine', 'text-white', 'shadow-sm');
+                freqOnetimeBtn.classList.add('text-pashmina-muted');
+            });
+
+            // Quick "Sponsor This Program" Pre-Fill & Smooth Scroll to Calculator
+            sponsorBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const amt = Number(btn.getAttribute('data-sponsor-amount'));
+                    const progName = btn.getAttribute('data-sponsor-name');
+                    updateCalculator(amt);
+                    selectedProgramLabel.textContent = progName;
+                    selectedProgramBanner.classList.remove('hidden');
+                    document.getElementById('calculator').scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+
+            // Initialize default calculator state
+            updateCalculator(1500);
+
+            // 6. Transparent Aid Pledge Preview Modal
+            const pledgeModal = document.getElementById('pledge-modal');
+            const openPledgeModalBtn = document.getElementById('open-pledge-modal');
+            const closePledgeModalBtn = document.getElementById('close-pledge-modal');
+            const cancelPledgeModalBtn = document.getElementById('cancel-pledge-modal');
+            const confirmDemoPledgeBtn = document.getElementById('confirm-demo-pledge');
+
+            const modalTierLabel = document.getElementById('modal-tier-label');
+            const modalTotalAmount = document.getElementById('modal-total-amount');
+            const modalVaccines = document.getElementById('modal-vaccines');
+            const modalKits = document.getElementById('modal-kits');
+            const modalCoats = document.getElementById('modal-coats');
+            const modalMeals = document.getElementById('modal-meals');
+
+            function openModal() {
+                const amount = Number(aidSlider.value);
+                const formatted = amount.toLocaleString('en-IN');
+
+                modalTierLabel.textContent = aidFrequency;
+                modalTotalAmount.textContent = formatted;
+                modalVaccines.textContent = `${statVaccines.textContent} doses`;
+                modalKits.textContent = `${statKits.textContent} kits`;
+                modalCoats.textContent = `${statCoats.textContent} coats`;
+                modalMeals.textContent = `${statMeals.textContent} meals`;
+
+                pledgeModal.classList.remove('hidden');
+                pledgeModal.classList.add('flex');
+            }
+
+            function closeModal() {
+                pledgeModal.classList.add('hidden');
+                pledgeModal.classList.remove('flex');
+            }
+
+            openPledgeModalBtn.addEventListener('click', openModal);
+            closePledgeModalBtn.addEventListener('click', closeModal);
+            cancelPledgeModalBtn.addEventListener('click', closeModal);
+            pledgeModal.addEventListener('click', (e) => {
+                if (e.target === pledgeModal) closeModal();
+            });
+
+            confirmDemoPledgeBtn.addEventListener('click', () => {
+                const formatted = Number(aidSlider.value).toLocaleString('en-IN');
+                closeModal();
+                showToast(
+                    `Pledge Preview Logged — ₹${formatted}`,
+                    `Simulated ${aidFrequency} breakdown for District Shopian, J&K. (UI Concept Prototype — no payment processed.)`
+                );
+            });
+
+            // 7. Local Volunteer, Feeder & Case Report Form Validation
+            const localDeskForm = document.getElementById('local-desk-form');
+            const applicantNameInput = document.getElementById('applicant-name');
+            const shopianLocalitySelect = document.getElementById('shopian-locality');
+            const submissionRoleSelect = document.getElementById('submission-role');
+            const caseNotesInput = document.getElementById('case-notes');
+
+            const errName = document.getElementById('err-name');
+            const errLocality = document.getElementById('err-locality');
+            const errNotes = document.getElementById('err-notes');
+
+            localDeskForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                let isValid = true;
+
+                if (applicantNameInput.value.trim().length < 2) {
+                    errName.classList.remove('hidden');
+                    isValid = false;
+                } else {
+                    errName.classList.add('hidden');
+                }
+
+                if (!shopianLocalitySelect.value) {
+                    errLocality.classList.remove('hidden');
+                    isValid = false;
+                } else {
+                    errLocality.classList.add('hidden');
+                }
+
+                if (caseNotesInput.value.trim().length < 6) {
+                    errNotes.classList.remove('hidden');
+                    isValid = false;
+                } else {
+                    errNotes.classList.add('hidden');
+                }
+
+                if (isValid) {
+                    const name = applicantNameInput.value.trim();
+                    const locality = shopianLocalitySelect.value;
+                    const role = submissionRoleSelect.value;
+
+                    showToast(
+                        `Shopian Desk Prototype Logged`,
+                        `Thank you, ${name}. Your "${role}" entry for ${locality} has been recorded in this UI demo.`
+                    );
+                    localDeskForm.reset();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
